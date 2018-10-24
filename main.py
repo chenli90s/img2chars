@@ -90,7 +90,7 @@ def play_unix_video(video_chars):
             # 显示 pic_i，即第i帧字符画
             for line_i in range(height):
                 # 将pic_i的第i行写入第i列。(line_i, 0)表示从第i行的开头开始写入。最后一个参数设置字符为白色
-                stdscr.addstr(line_i, 0, video_chars[pic_i][line_i], curses.COLOR_WHITE)
+                stdscr.addstr(line_i, 0, video_chars[pic_i][line_i], curses.COLOR_GREEN)
             stdscr.refresh()  # 写入后需要refresh才会立即更新界面
 
             time.sleep(1 / 14)  # 粗略地控制播放速度。更精确的方式是使用游戏编程里，精灵的概念
